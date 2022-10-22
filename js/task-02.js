@@ -1,3 +1,5 @@
+"use strict";
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -6,3 +8,19 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const list = document.querySelectorAll('#ingredients');
+
+const liArray = [];
+
+ingredients.forEach(ingredient => {
+  const item = document.createElement('li')
+  item.className = 'item';
+  item.textContent = ingredient;
+  liArray.push(item);
+
+})
+
+//list.append(...liArray);
+console.log(liArray);
+
