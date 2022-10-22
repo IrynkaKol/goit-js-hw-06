@@ -10,15 +10,14 @@ const ingredients = [
 ];
 
 const list = document.querySelector('#ingredients');
-console.log(list)
-
+console.log(list);
 const liArray = [];
 
 ingredients.forEach(ingredient => {
-  const item = document.createElement('li')
-  item.className = 'item';
-  item.textContent = ingredient;
-  liArray.push(item);
+  const itemLi = document.createElement('li')
+  itemLi.className = 'item';
+  itemLi.textContent = ingredient;
+  liArray.push(itemLi);
 
 })
 
