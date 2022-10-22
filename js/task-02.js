@@ -9,7 +9,8 @@ const ingredients = [
   'Condiments',
 ];
 
-const list = document.querySelectorAll('#ingredients');
+const list = document.querySelector('#ingredients');
+console.log(list)
 
 const liArray = [];
 
@@ -21,6 +22,6 @@ ingredients.forEach(ingredient => {
 
 })
 
-//list.append(...liArray);
+list.append(...liArray);
 console.log(liArray);
 
